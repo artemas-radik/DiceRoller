@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DiceRoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="qxc-GG-uxa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kdB-Wq-1yV">
+                                <rect key="frame" x="60" y="124" width="294" height="429"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="RIL-JT-ek4">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="136.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="SP3-54-t7P">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="136.5"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="GXv-3Q-Mjk">
+                                                <rect key="frame" x="177" y="0.0" width="117" height="136.5"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-bC-dvA">
+                                        <rect key="frame" x="0.0" y="146.5" width="294" height="136"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice3" translatesAutoresizingMaskIntoConstraints="NO" id="Pti-xP-RFq">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="136"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice4" translatesAutoresizingMaskIntoConstraints="NO" id="alV-T4-ooT">
+                                                <rect key="frame" x="177" y="0.0" width="117" height="136"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pD7-15-06p">
+                                        <rect key="frame" x="0.0" y="292.5" width="294" height="136.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice5" translatesAutoresizingMaskIntoConstraints="NO" id="aEy-hg-eCG">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="136.5"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice6" translatesAutoresizingMaskIntoConstraints="NO" id="I6B-cb-YOf">
+                                                <rect key="frame" x="177" y="0.0" width="117" height="136.5"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpO-Wx-23W">
+                                <rect key="frame" x="120" y="672.5" width="174" height="98.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jtO-4E-Gek"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="-2" height="0.0"/>
+                                <state key="normal" title="Roll" backgroundImage="capsule.fill" catalog="system">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EVf-3Y-ovY"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="6.9900000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="xBP-K8-2bf">
+                                <rect key="frame" x="48" y="806" width="318" height="31"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qzn-5N-7Mi"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxY-Wh-33N">
+                                <rect key="frame" x="60" y="54" width="294" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FpO-Wx-23W" secondAttribute="bottom" constant="90" id="9Am-Vv-Gpp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FpO-Wx-23W" secondAttribute="trailing" constant="120" id="Gbb-cq-Yu8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xBP-K8-2bf" secondAttribute="trailing" constant="50" id="JTd-gR-GKy"/>
+                            <constraint firstItem="xBP-K8-2bf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="K60-Xr-ziv"/>
+                            <constraint firstItem="AxY-Wh-33N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="OQX-VE-AYn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kdB-Wq-1yV" secondAttribute="trailing" constant="60" id="QpE-dD-Dr1"/>
+                            <constraint firstItem="AxY-Wh-33N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="SFO-Su-FS9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="kdB-Wq-1yV" secondAttribute="bottom" constant="-100" id="TFn-LI-f7w"/>
+                            <constraint firstItem="FpO-Wx-23W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="bSK-hS-e3t"/>
+                            <constraint firstItem="kdB-Wq-1yV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="daL-SJ-6ZV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xBP-K8-2bf" secondAttribute="bottom" constant="26" id="ilT-hD-2xJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AxY-Wh-33N" secondAttribute="trailing" constant="60" id="wGD-5Y-aw6"/>
+                            <constraint firstItem="kdB-Wq-1yV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="whl-Vj-fMV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="xBP-K8-2bf" id="ZZH-t0-HRJ"/>
+                        <outlet property="totalLabel" destination="AxY-Wh-33N" id="566-SE-4me"/>
+                        <outletCollection property="dice" destination="SP3-54-t7P" collectionClass="NSMutableArray" id="Wqf-CE-MTj"/>
+                        <outletCollection property="dice" destination="GXv-3Q-Mjk" collectionClass="NSMutableArray" id="LQn-H9-JhZ"/>
+                        <outletCollection property="dice" destination="Pti-xP-RFq" collectionClass="NSMutableArray" id="cq5-1H-NtW"/>
+                        <outletCollection property="dice" destination="alV-T4-ooT" collectionClass="NSMutableArray" id="ArG-D1-0JT"/>
+                        <outletCollection property="dice" destination="aEy-hg-eCG" collectionClass="NSMutableArray" id="Eu1-BL-PRi"/>
+                        <outletCollection property="dice" destination="I6B-cb-YOf" collectionClass="NSMutableArray" id="h2U-pX-6am"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="capsule.fill" catalog="system" width="64" height="46"/>
+        <image name="dice1" width="100" height="100"/>
+        <image name="dice2" width="100" height="100"/>
+        <image name="dice3" width="100" height="100"/>
+        <image name="dice4" width="100" height="100"/>
+        <image name="dice5" width="100" height="100"/>
+        <image name="dice6" width="100" height="100"/>
+        <image name="newbackground" width="444.5" height="414"/>
+    </resources>
+</document>
